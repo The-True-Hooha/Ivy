@@ -1,2 +1,4 @@
+download and install psql
 create psql database connection
-change file properties to .yml
+change file properties to .yml to access config for database connection in te application.properties file
+

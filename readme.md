@@ -9,3 +9,12 @@ List of dependencies:
 4. Spring security
 5. Lombok
 6. Java mail sender
+
+
+PREREQUISITES:
+
+Java, obviously (syke!)
+SpringBoot
+Have an understanding of Spring Security
+Spring data JPA
+Postgresql database connection

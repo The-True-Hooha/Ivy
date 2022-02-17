@@ -1,4 +1,4 @@
-Ivy is a user backend end focused system built with Java spring boot.
+Ivy is a user backend focused system built with Java spring boot.
 
 Db used was postgresql: connected to the local host.
 

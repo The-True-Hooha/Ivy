@@ -56,6 +56,7 @@ public class AppUser implements UserDetails {
                    AppUserRole appUserRole,
                    Boolean locked,
                    Boolean enabled) {
+
         this.name = name;
         this.username = username;
         this.email = email;

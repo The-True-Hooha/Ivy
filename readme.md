@@ -14,7 +14,13 @@ List of dependencies:
 PREREQUISITES:
 
 Java, obviously (syke!)
-SpringBoot
+
+Springboot
+
+Springboot security
+
 Have an understanding of Spring Security
+
 Spring data JPA
+
 Postgresql database connection

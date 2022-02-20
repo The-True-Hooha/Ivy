@@ -17,9 +17,7 @@ Java, obviously (syke!)
 
 Springboot
 
-Springboot security
-
-Have an understanding of Spring Security
+An understanding of Spring Security
 
 Spring data JPA
 

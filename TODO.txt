@@ -2,4 +2,5 @@ download and install psql
 create psql database connection
 change file properties to .yml to access config for database connection in te application.properties file
 remember to create the constructor and getter and setter methods for the phoneNumber and email fields
+stackoverflow how to write a method that finds a phone number and throws and exception if not found in the database
 

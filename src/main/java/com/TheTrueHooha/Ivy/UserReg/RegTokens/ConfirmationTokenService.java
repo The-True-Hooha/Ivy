@@ -13,4 +13,12 @@ public class ConfirmationTokenService {
     public void saveConfirmationToken (ConfirmationToken token) {
         confirmationTokenRepository.save(token);
     }
+
+    /*
+    public static class getToken {
+        public getToken(String token) {
+        }
+    }
+
+     */
 }

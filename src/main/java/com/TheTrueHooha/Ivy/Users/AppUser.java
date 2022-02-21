@@ -43,8 +43,8 @@ public class AppUser implements UserDetails {
 
     @Enumerated(EnumType.STRING)
     private AppUserRole appUserRole;
-    private Boolean locked;
-    private Boolean enabled;
+    private Boolean locked = false;
+    private Boolean enabled = false;
 
 
     //constructor for the user properties
@@ -79,7 +79,7 @@ public class AppUser implements UserDetails {
     public String getUsername() {
         return email;
     }
-
+    
     public String getFirstName () {
         return firstName;
     }

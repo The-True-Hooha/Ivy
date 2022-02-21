@@ -1,6 +1,7 @@
 package com.TheTrueHooha.Ivy.Users;
 
 import com.TheTrueHooha.Ivy.UserReg.RegTokens.ConfirmationToken;
+import com.TheTrueHooha.Ivy.UserReg.RegTokens.ConfirmationTokenService;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -20,6 +21,7 @@ public class AppUserService implements UserDetailsService {
 
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final ConfirmationTokenService confirmationTokenService;
 
 
     @Override
@@ -50,10 +52,13 @@ public class AppUserService implements UserDetailsService {
         ConfirmationToken confirmationToken = new ConfirmationToken(
                 token,
                 LocalDateTime.now(),
-                LocalDateTime.now().plusMinutes(3),
+                LocalDateTime.now().plusMinutes(3), //time taken for minutes expiration
                 appUser
         );
 
-        return "everything is in working order";
+        confirmationTokenService.saveConfirmationToken(confirmationToken);
+
+        //TODO: send email
+        return token;
     }
 }
